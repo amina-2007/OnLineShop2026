@@ -25,10 +25,23 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Catalog">Каталог</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="UserView">Профиль</a>
-                        </li>
+                        
                     </ul>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown">
+                            АДМИНИСТРАТОР
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" asp-controller="User" asp-action="UserTable">Пользователи</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-controller="User" asp-action="UserView">Профиль</a>
+                    </li>
                 </div>
             </div>
         </nav>

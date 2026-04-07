@@ -5,7 +5,7 @@ namespace OnLineShop2026.Controllers
 {
     public class UserController : Controller 
     {
-      /*  public IActionResult UserView()
+       public IActionResult UserView()
         {
            User user = new User
             (
@@ -17,9 +17,9 @@ namespace OnLineShop2026.Controllers
             );
             return View(user);
         }
-      */
+      
       private UserRepository userRepository=new UserRepository();   
-      public IActionResult Index()
+      public IActionResult UserTable()
         {
             var users=userRepository.GetAll();
             return View(users);
